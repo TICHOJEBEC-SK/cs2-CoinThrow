@@ -12,7 +12,7 @@
 
 #### ABOUT THE PLUGIN
 
-The plugin serves as a guard/warden. Once a coin is tossed, the result will be heads or tails. The plugin is connected to a database, so you will always know after each toss how many times the warden has used the coin toss function. Ideal for cases where prisoners guess the outcome, and it's up to the warden to decide the punishment for players who didn't guess correctly.
+The plugin serves as a guard/warden. Once a coin is tossed, the result will be heads or tails. The plugin is connected to a database, so you will always know after each toss how many times the warden has used the coin toss function. Ideal for cases where prisoners guess the outcome, and it's up to the warden to decide the punishment for players who didn't guess correctly.<br>
 <img src="https://i.ibb.co/nwvGh0Y/image.png"/>
 
 ## 💡 Contact
