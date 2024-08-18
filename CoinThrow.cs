@@ -108,7 +108,7 @@ namespace CoinThrow
                 });
             }
         }
-        [ConsoleCommand("css_hodmincou", "Throw a coin with the result being heads or tails")]
+        [ConsoleCommand("css_cointhrow", "Throw a coin with the result being heads or tails")]
         public void OnCoinThrowCommand(CCSPlayerController? player, CommandInfo command)
         {
             if (player != null && player.PlayerPawn.Value != null)
@@ -118,13 +118,16 @@ namespace CoinThrow
                     player.PrintToChat($"You can throw the coin only once every {ChatColors.DarkRed}10 {ChatColors.Default}seconds!");
                     return;
                 }
-
+        
                 Random random = new Random();
                 bool coinResult = random.Next(2) == 0;
+        
                 string resultString = coinResult ? "Heads" : "Tails";
-                Server.PrintToChatAll($"The player {ChatColors.Green}{player.PlayerName}{ChatColors.Default} threw the coin and the result is {ChatColors.Green}{resultString}{ChatColors.Default}.");
-                UpdateLastCoinThrowTime(player.SteamID.ToString());
+                Server.PrintToChatAll($"Player {ChatColors.Green}{player.PlayerName}{ChatColors.Default} threw the coin and the result is {ChatColors.Green}{resultString}{ChatColors.Default}.");
                 AddOrUpdateCoinThrowInDatabase(player.SteamID.ToString(), player.PlayerName);
+                int totalThrows = GetPlayerThrows(player.SteamID.ToString());
+                Server.PrintToChatAll($"His total number of throws is {ChatColors.Green}{totalThrows}x{ChatColors.Default}.");
+                UpdateLastCoinThrowTime(player.SteamID.ToString());
             }
         }
     }
