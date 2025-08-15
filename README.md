@@ -3,40 +3,48 @@
 </h1>
 
 <p align="center">
-<i>Loved the tool? Please consider <a href="https://paypal.com/paypalme/cskonet">donating</a>  💸 to help it improve!</i>
+<i>If you like this plugin, please consider <a href="https://paypal.com/paypalme/playpointsk">donating</a> 💸 to help it improve!</i>
 </p>
 
 <p align="center">
-<a href="https://www.paypal.com/paypalme/mleaguecz"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate"/>
+<a href="https://www.paypal.com/paypalme/mleaguecz">
+  <img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate"/>
 </a>
+</p>
 
 #### ABOUT THE PLUGIN
 
-The plugin for guard/warden. Once a coin is tossed, the result will be heads or tails. The plugin is connected to a database, so you will always know after each toss how many times the warden has used the coin toss function. Ideal for cases where prisoners guess the outcome, and it's up to the warden to decide the punishment for players who didn't guess correctly.<br>
-<img src="https://i.ibb.co/nwvGh0Y/image.png"/>
+This plugin allows wardens/guards to toss a coin, with the result being either heads or tails.  
+It is fully connected to a MySQL database via **Dapper**, so you can track how many times each player (warden) has thrown the coin.  
+
+**Use case:** Prisoners can guess the outcome, and the warden decides the punishment for wrong guesses.  
+<img src="https://i.ibb.co/nwvGh0Y/image.png" alt="CoinThrow plugin screenshot"/>
+
+**Features:**
+- Coin toss result: Heads or Tails.
+- Database integration with MySQL.
+- Counts total throws per player.
+- 10-second cooldown between coin tosses.
 
 ## 💡 Contact
-**If you are interested in this plugin, contact me via private message.**
-
-Discord: tichotm
+For questions or support, contact me via Discord: **tichotm**
 
 ## 🛠️ Installation Steps
 
-**Required for functionality plugin**
-- [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) 
+**Required:**
+- [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
-**How to install?**
-1. Begin by downloading the contents and then proceed to open the downloaded zip file.
-2. Within the extracted files, locate the 'Gameserver' folder.
-3. Drag all the files found within the 'Gameserver' folder and drop them into the '/game/csgo/addons/counterstrikesharp/plugins' directory on your game server.
-4. Once the files are successfully transferred, restart your server to apply the changes or simply change the map in order for the modifications to take effect.
-5. After successfully transferring the files, restart the server to create a configuration file for setting up the correct database connection.
+**Installation:**
+1. Download the plugin ZIP file and extract it.
+2. Locate the `Gameserver` folder inside the extracted files.
+3. Copy all files from `Gameserver` to `/game/csgo/addons/counterstrikesharp/plugins` on your server.
+4. Restart the server or change the map to apply changes.
+5. Edit the generated `Config.json` to set the correct database connection (`DBHost`, `DBUser`, `DBPassword`, `DBDatabase`, `DBPort`).
 
 ## 🙇 Sponsors
 - Be the first to support this project!
 
 ## 🙏 Support
 <p align="left">
-<a href="https://paypal.com/paypalme/mleaguecz"><img src="https://ionicabizau.github.io/badges/paypal.svg">
-</a>
+<a href="https://paypal.com/paypalme/playpointsk"><img src="https://ionicabizau.github.io/badges/paypal.svg"></a>
 </p>
